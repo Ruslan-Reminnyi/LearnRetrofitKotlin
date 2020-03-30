@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/recycler_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector">
+
+        <TextView
+            android:id="@+id/recycler_text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:paddingLeft="4dp"
+            android:text="to do"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recycler_text_view_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_text_view_name"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="4dp"
+            android:text="to do"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recycler_text_view_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="4dp"
+            android:text="to do"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
